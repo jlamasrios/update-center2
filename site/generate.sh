@@ -50,8 +50,8 @@ MAIN_DIR="$( readlink -f "$SIMPLE_SCRIPT_DIR/../" 2>/dev/null || greadlink -f "$
 echo "Main directory: $MAIN_DIR"
 mkdir -p "$MAIN_DIR"/tmp/
 
-version=3.8
-coordinates=org/jenkins-ci/update-center2/$version/update-center2-$version-bin.zip
+version=3.9-SNAPSHOT
+coordinates=org/jenkins-ci/update-center2/$version/update-center2-3.9-20210612.154004-1-bin.zip
 
 if [[ -f "$MAIN_DIR"/tmp/generator-$version.zip ]] ; then
   echo "tmp/generator-$version.zip already exists, skipping download"
