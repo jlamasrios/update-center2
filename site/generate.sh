@@ -58,7 +58,7 @@ if [[ -f "$MAIN_DIR"/tmp/generator-$version.zip ]] ; then
 else
   echo "tmp/generator-$version.zip does not exist, downloading ..."
   rm -rf "$MAIN_DIR"/tmp/generator*.zip
-  wget --no-verbose -O "$MAIN_DIR"/tmp/generator-$version.zip "https://repo.jenkins-ci.org/releases/$coordinates"
+  wget --no-verbose -O "$MAIN_DIR"/tmp/generator-$version.zip "https://repo.jenkins-ci.org/snapshots/$coordinates"
 fi
 
 rm -rf "$MAIN_DIR"/tmp/generator/
